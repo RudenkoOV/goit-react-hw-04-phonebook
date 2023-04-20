@@ -38,11 +38,6 @@ export default function App () {
     } else { alert(`${name} is EMPTY! Please enter valid name or number`); };
   }
 
-
-
-
-
-
   function removeContact(id) {
     setContacts(contacts.filter(contact => contact.id !== id));
   }
@@ -52,6 +47,7 @@ export default function App () {
   }
 
   function filteredContacts() {
+    
       return contacts.filter(contact => 
       contact.name.toLowerCase().includes(filterData.toLowerCase()))
   }
