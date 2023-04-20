@@ -54,7 +54,7 @@ export default function App () {
   function filteredContacts() {
     console.log(filterData);
       return contacts.filter(contact => 
-      contact.name.toLowerCase().includes(filterData.toLowerCase()))
+      contact.name.toLowerCase())
   }
 
     return (
