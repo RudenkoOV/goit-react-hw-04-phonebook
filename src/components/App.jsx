@@ -52,7 +52,7 @@ export default function App () {
   }
 
   function filteredContacts() {
-    
+    console.log()
     return contacts.filter(contact => 
       contact.name.toLowerCase().includes(filterData.toLowerCase())
     );
