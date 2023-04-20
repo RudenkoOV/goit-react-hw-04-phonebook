@@ -52,9 +52,9 @@ export default function App () {
   }
 
   function filteredContacts() {
-    const lowCase = filterData.toLowerCase();
+    
     return contacts.filter(contact => 
-      contact.name.toLowerCase().includes(lowCase)
+      contact.name.toLowerCase().includes(filterData.toLowerCase())
     );
   }
 
