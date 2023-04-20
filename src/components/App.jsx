@@ -11,7 +11,7 @@ export default function App () {
   const [contacts, setContacts] = useState(
     JSON.parse(localStorage.getItem('contact'))
   );
-  const [filterData, setfilterData] = useState('');
+  const [filterData, setfilterData] = useState(' ');
 
   useEffect(() => {
     localStorage.setItem('contact', JSON.stringify(contacts));
@@ -52,8 +52,7 @@ export default function App () {
   }
 
   function filteredContacts() {
-    console.log(contact => 
-      contact.name.toLowerCase().includes(filterData.toLowerCase()))
+    console.log(filterData);
       return contacts.filter(contact => 
       contact.name.toLowerCase().includes(filterData.toLowerCase()))
   }
